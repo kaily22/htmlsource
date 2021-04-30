@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    :root {
+      font-size: 13px;
+    }
+    body {
+      font-size: 12px;
+    }
+    .box {
+      float: left;
+      margin-right: 20px;
+      background: blue;
+      color: #fff;
+      text-align: center;
+    }
+    .box_px {
+      width: 160px;
+      height: 160px;
+    }
+    .box_em {
+      width: 10em; /*16*10 -> root 추가시 13*10 => body 추가 시 12*10*/
+      height: 10em;
+    }
+    .box_rem {
+      width: 10rem;
+      height: 10rem;
+    }
+  </style>
+  <body>
+    <h1>css 기본 문법</h1>
+    <div class="wrapper clearfix">
+      <div class="box box_px">px</div>
+      <div class="box box_em">px</div>
+      <div class="box box_rem">px</div>
+    </div>
+  </body>
+</html>
