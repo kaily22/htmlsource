@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .area {
+        color: red;
+      } */
+      /* p {
+        color: red;
+      } */
+      .area p {
+        /*클래스 선택자 + 태그 선택자 */
+        color: red;
+      }
+      p {
+        /*태그 선택자*/
+        color: blue;
+      }
+      #text {
+        /*아이디 선택자*/
+        color: green;
+      }
+      #text2 {
+        color: orange !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="area">
+      <p id="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        voluptates ipsa, voluptatum quibusdam hic facilis rerum aliquam
+        distinctio. Rerum explicabo nam nulla doloribus ullam doloremque culpa
+        laboriosam porro ratione repudiandae?
+      </p>
+      <p id="text2" style="color: palegreen">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eos et
+        dolorum labore delectus quasi, libero molestiae, necessitatibus
+        consequatur porro vel dignissimos quos. Vitae saepe magnam, at placeat
+        libero sit.
+      </p>
+    </div>
+  </body>
+</html>

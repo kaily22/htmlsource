@@ -1,0 +1,25 @@
+body {
+  font-size: 14px;
+  font-family: "맑은 고딕", 돋움, 굴림;
+}
+p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+div:first-of-type {
+  line-height: 1.5;
+  font-size: 30px;
+}
+.serif {
+  font-family: serif;
+}
+.sans-serif {
+  font-family: sans-serif;
+}
+.monospace {
+  font-family: monospace;
+}
+.cursive {
+  font-family: cursive;
+}
