@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /*box모델로 적용*/
+        }
+        body{
+            font-family: "Open Sans";
+            background: #ecf0f1;
+        }
+        .wrapper {
+            max-width: 60rem;
+            width: 100%;
+            margin: 2rem auto;
+        }
+        .flexbg {
+            display: flex;
+        }
+        .flexbg main{
+            background: white;
+            padding: 25px;
+            order : 2;
+        }
+        .flexbg .sidebar {
+            width: 20%;
+            padding: 25px;
+        }
+        .flexbg .left{
+            background: #3498db;
+            order: 1;
+        }
+        .flexbg .right {
+            background: #34495e;
+            order: 3;
+        }
+        @media screen and (max-width : 786px) {
+            .flexbg {
+                flex-wrap: wrap;
+            } 
+            .flexbg main{
+                order: 1;
+                width: 100%;
+            }
+            .flexbg .sidebar{
+                width: 50%;
+            }
+            .flexbg .left{
+                order:2;
+            }
+        }
+        @media screen and (max-width : 480px) {
+            .flexbg .sidebar{
+                width: 100%;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus,
+          pariatur assumenda quas excepturi hic aliquid vitae fuga in
+          repudiandae provident. Aliquid ipsam veritatis quasi id voluptates,
+          dolorum eligendi dolores, quia odio impedit nulla facere consectetur
+          praesentium fugiat debitis iure? Fugiat ullam, magni nisi dolorem
+          tenetur officiis ipsam voluptatum architecto laborum illum, aperiam
+          praesentium qui! Nisi, consequatur explicabo asperiores ut quidem sit
+          cumque cupiditate et nulla, ratione quaerat commodi, eaque
+          accusantium. Ratione, eos consequuntur! Libero aspernatur excepturi
+          error odio consequatur odit exercitationem dolores alias eius illo eos
+          minus est cupiditate unde, iste accusantium dignissimos officia vero
+          praesentium modi ipsa sapiente rerum?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus,
+          pariatur assumenda quas excepturi hic aliquid vitae fuga in
+          repudiandae provident. Aliquid ipsam veritatis quasi id voluptates,
+          dolorum eligendi dolores, quia odio impedit nulla facere consectetur
+          praesentium fugiat debitis iure? Fugiat ullam, magni nisi dolorem
+          tenetur officiis ipsam voluptatum architecto laborum illum, aperiam
+          praesentium qui! Nisi, consequatur explicabo asperiores ut quidem sit
+          cumque cupiditate et nulla, ratione quaerat commodi, eaque
+          accusantium. Ratione, eos consequuntur! Libero aspernatur excepturi
+          error odio consequatur odit exercitationem dolores alias eius illo eos
+          minus est cupiditate unde, iste accusantium dignissimos officia vero
+          praesentium modi ipsa sapiente rerum?
+        </p>
+      </main>
+     <aside class="sidebar left">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, voluptatem?</p>
+   </aside>
+   <aside class="sidebar right">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nihil!</p>
+   </aside>
+      </div>
+    </div>
+  </body>
+</html>
