@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #result {
+        color: red;
+        margin-top: 0;
+        font-size: 0.8em;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="tel">전화번호</label>
+      <input type="text" name="tel" id="tel" onfocus="inputClear()" />
+      <input type="button" value="보내기" onclick="tel_check()" />
+      <p id="result"></p>
+    </form>
+    <script>
+      let result = document.querySelector("#result");
+      function inputClear() {
+        document.querySelector("#tel").value = "";
+        reesult.innerHTML = "";
+        result.style.display = "none";
+      }
+      //보내기버튼 클릭시
+      function tel_check() {
+        const regex = /^\d{2,3}-\d{3,4}-\d{4}$/;
+        let tel = document.querySelector("#tel").value;
+        //result.innerHTML = regex.test(tel);
+        if (!regex.test(tel)) {
+          result.style.display = "block";
+          result.innerHTML = "전화번호를 확인해 주세요";
+        }
+      }
+    </script>
+  </body>
+</html>
