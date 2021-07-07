@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #footer {
+        clear: both;
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+      /* 1.하단정보 */
+      .optr_link {
+        display: none;
+      }
+      .f_info {
+        position: relative;
+        width: 100%;
+        float: left;
+        background: #78c2ad;
+        border-bottom: 1px solid #78c2ad;
+        min-height: 90px;
+        z-index: 10;
+      }
+      .f_info .f_png {
+        position: absolute;
+        top: 27px;
+        left: 0;
+        width: 209px;
+        height: 42px;
+      }
+      .f_menu {
+        padding: 35px 0 12px 247px;
+      }
+      .f_menu li {
+        display: inline-block;
+        background: no-repeat left 8px;
+      }
+      .f_menu li:first-child {
+        background: none;
+      }
+      .f_menu li a {
+        display: inline-block;
+        margin: 0 18px 0 18px;
+        font-size: 13px;
+        color: #fff;
+        text-decoration: none;
+      }
+      .f_menu li.privacy a {
+        color: white !important;
+      }
+
+      .f_info .f_sns {
+        position: absolute;
+        right: 0;
+        top: 36px;
+      }
+      .f_info .f_sns li {
+        float: left;
+        height: 21px;
+        margin: 0 0 0 34px;
+      }
+      .f_info .f_sns li:first-child {
+        margin: 0 0 0 0;
+      }
+      .f_info .f_sns_w li a {
+        font-size: 0;
+        line-height: 0;
+        float: left;
+      }
+      .f_info .f_sns li.sns1 a {
+        width: 22px;
+        height: 21px;
+      }
+      .f_info .f_sns li.sns2 a {
+        width: 10px;
+        height: 21px;
+
+      }
+      .f_info .f_sns li.sns3 a {
+        width: 13px;
+        height: 21px;
+      }
+
+      /* 2.주소 및 사이트링크 */
+      .f_link_w {
+        position: relative;
+        width: 100%;
+        float: left;
+        background: #78c2ad;
+        padding: 30px 0;
+      }
+      .f_addr {
+        font-size: 13px;
+        line-height: 22px;
+        color: white;
+        padding: 0 450px 0 0;
+      }
+      .f_addr .f_mail {
+        font-size: 13px;
+        line-height: 22px;
+        color: white !important;
+        text-decoration: none;
+        letter-spacing: 0;
+      }
+      .f_addr div {
+        float: left;
+        margin-right: 22px;
+        display: inline-block;
+      }
+      .copyright {
+        clear: both;
+        letter-spacing: 0px;
+      }
+
+      .btn_top {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 57px;
+        right: -80px;
+        cursor: pointer;
+        font-size: 0;
+        line-height: 0;
+      }
+
+      /* == CONTENT : 1000이하 == */
+      @media all and (max-width: 1024px) {
+        .f_info {
+          position: relative;
+          width: 100%;
+          float: left;
+          background: #78c2ad;
+          border-bottom: 1px solid #78c2ad;
+          min-height: 90px;
+          z-index: 10;
+        }
+        .f_info .f_png {
+          position: absolute;
+          top: 27px;
+          left: 50%;
+          margin-left: -104px;
+          width: 209px;
+          height: 42px;
+          background: url("/img/2018/layout/m_icon_all.png") no-repeat 0 -368px;
+          border-bottom: 1px solid #4a4a4c;
+          padding-bottom: 8px;
+        }
+        .f_menu {
+          padding: 120px 20px 12px 20px;
+          display: block;
+          text-align: center;
+        }
+        .f_menu li {
+          display: inline-block;
+          background: none;
+        }
+        .f_menu li:first-child {
+          background: none;
+        }
+        .f_menu li a {
+          display: inline-block;
+          margin: 0 5px;
+          font-size: 0.95em;
+          color: #fff;
+          text-decoration: none;
+        }
+        .f_menu li.privacy a {
+          color: white !important;
+        }
+        .f_info .f_sns {
+          position: absolute;
+          left: 50%;
+          margin-left: -85px;
+          right: 0;
+          top: 90px;
+        }
+        .f_addr {
+          font-size: 1em;
+          color: white;
+          padding: 60px 0 0 0;
+          text-align: center;
+          line-height: 1.5em;
+        }
+        .f_addr div {
+          float: left;
+          margin-right: 22px;
+          display: inline-block;
+          text-align: center;
+          width: 100%;
+        }
+      }
+      /* == CONTENT : 480 이하 == */
+      @media all and (max-width: 480px) {
+        .f_addr {
+          font-size: 1em;
+          color: white;
+          padding: 110px 0 0 0;
+          text-align: center;
+          line-height: 1.5em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--하단 -->
+    <footer id="footer">
+      <div class="f_info">
+        <div class="layout">
+          <div class="f_png">
+            <img src="test/tent.png" width="100" height="100"/>
+            <span class="campus">Camp Us</span>
+          </div>
+          <ul class="f_menu">
+            <li class="privacy">
+              <a href="">회사 소개</a>
+            </li>
+            <li>
+              <a href="">개인정보약관</a>
+            </li>
+            <li>
+              <a href="">문의 게시판</a>
+            </li>
+          </ul>
+          <ul class="f_sns">
+            <li class="sns1">
+              <a
+                href=""
+                target="_blank"
+                title="CampUs 공식 인스타 바로가기"
+                >CampUs 인스타그램</a
+              >
+            </li>
+            <li class="sns2">
+              <a
+                href=""
+                target="_blank"
+                title="CampUs 공식 페이스북 바로가기"
+                >CampUs 공식 페이스북</a
+              >
+            </li>
+            <li class="sns3">
+              <a
+                href=""
+                target="_blank"
+                title="CampUs 공식 블로그 바로가기"
+                >CampUs 공식 블로그</a
+              >
+            </li>
+          </ul>
+          <div class="btn_top">상단으로</div>
+        </div>
+      </div>
+      <!--//하단개인정보 링크영역-->
+      <!--하단주소영역&바로가기 링크-->
+
+      <div class="f_link_w">
+        <div class="layout">
+          <!--하단주소-->
+          <div class="f_addr">
+            <address class="addr">
+              <div>서울특별시 종로구 코아빌딩 5층</div>
+              <div>TEL : 02-000-0000 (상담시간 : 평일 09:30~18:30)</div>
+              <div>
+                EMAIL :
+                <a href="mailto:CampUs@gmail.com" class="f_mail">mailto:CampUs@gmail.com</a>
+              </div>
+            </address>
+            <p class="copyright">
+              Copyrights(c) 2021 <span>KOREA CAMPUS ORGANIZATION</span>
+               ALL RIGHTS RESERVED.
+            </p>
+          </div>
+          <!--//f_addr-->
+          <!--//하단주소-->
+      <!--//하단주소영역&바로가기 링크-->
+    </footer>
+  </body>
+</html>
